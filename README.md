@@ -42,3 +42,20 @@ The folowing datasets have been used in this project:
 2. [PHEME Dataset for Rumour Detection](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/63920787)
 
 
+# Development
+
+So far, the Poltifact and Gossipcop (both fake and real) datasets have been combined into a single dataset of 33356 rows and 3 columns. The three columns are:  
+* news_url : contains the source url
+* title : news-headline/ tweet
+* target : 1/0 (1- real, 0-fake)
+
+All other columns have been dropped.  
+
+## Data Cleaning
+The following operations have been applied to the combined dataset:
+* Combining _title_ and *news_url* into single column
+* Tokenization
+* Removing stop words
+
+# Status
+Ongoing... 
