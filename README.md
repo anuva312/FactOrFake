@@ -19,7 +19,7 @@ plan to look at other features like source of the news.
 # Requirements
 ## Hardware Requirements
 
-I3 Processor, 8 GB RAM
+I3(or above) Processor, 8 GB RAM
 
 ## Software Requirements
 
@@ -31,8 +31,7 @@ Anaconda
 ## Functional Requirements
 
 NLTK library  
-Pandas  
-RegEx re  
+Pandas    
 Sklearn Library
 
 
@@ -40,9 +39,10 @@ Sklearn Library
 The folowing datasets have been used in this project:
 1. [FakeNewsNet](https://github.com/nishitpatel01/Fake_News_Detection.git)
 2. [PHEME Dataset for Rumour Detection](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/63920787)
+3. Kaggle Datasets
 
 
-# Development
+# Progress
 
 So far, the Poltifact and Gossipcop (both fake and real) datasets have been combined into a single dataset of 33356 rows and 3 columns. The three columns are:  
 * news_url : contains the source url
@@ -56,6 +56,7 @@ The following operations have been applied to the combined dataset:
 * Combining _title_ and *news_url* into single column
 * Tokenization
 * Removing stop words
+* Lemmatization
 
 # Status
 Ongoing... 
