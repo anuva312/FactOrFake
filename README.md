@@ -37,7 +37,7 @@ Sklearn Library
 
 # Datasets
 The folowing datasets have been used in this project:
-1. [FakeNewsNet](https://github.com/nishitpatel01/Fake_News_Detection.git)
+1. [FakeNewsNet](https://www.kaggle.com/mdepak/fakenewsnet)
 2. [PHEME Dataset for Rumour Detection](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/63920787)
 3. Kaggle Datasets
 
