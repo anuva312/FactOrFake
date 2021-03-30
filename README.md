@@ -37,9 +37,12 @@ Sklearn Library
 
 # Datasets
 The folowing datasets have been used in this project:
-1. [FakeNewsNet](https://www.kaggle.com/mdepak/fakenewsnet)
+1. [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet)
 2. [PHEME Dataset for Rumour Detection](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/63920787)
 3. Kaggle Datasets
+    1. [Getting Real About Fake News](https://www.kaggle.com/mrisdal/fake-news)
+    2. [Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+    3. [Covid-19 Fake News Dataset](https://www.kaggle.com/arashnic/covid19-fake-news)
 
 
 # Progress
