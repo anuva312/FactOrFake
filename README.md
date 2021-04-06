@@ -49,7 +49,11 @@ The folowing datasets have been used in this project:
 
 # Progress
 
-So far, the Poltifact and Gossipcop (both fake and real) datasets have been combined into a single dataset of 33356 rows and 3 columns. The three columns are:  
+So far, the Poltifact and Gossipcop (both fake and real) datasets have been combined into a single dataset of 33356 rows and 3 columns. 
+
+The _Getting Real About Fake News_ and _Covid-19 Fake News Dataset_ were also added to get a final dataset of size 50220 rows and 3 columns.
+
+The three columns are:  
 * news_url : contains the source url
 * title : news-headline/ tweet
 * target : 1/0 (1- real, 0-fake)
