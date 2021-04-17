@@ -60,12 +60,18 @@ The three columns are:
 
 All other columns have been dropped.  
 
-## Data Cleaning
+## Data Preprocessing
 The following operations have been applied to the combined dataset:
 * Combining _title_ and *news_url* into single column
 * Tokenization
 * Removing stop words
 * Lemmatization
+* Vectorization
+
+## Training the model
+Algorithms used are:
+* Logistic Regression
+* Multinomial Naive Bias
 
 # Status
 Ongoing... 
