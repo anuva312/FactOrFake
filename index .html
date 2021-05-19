@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fake News Detection System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+	* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}</style>
+</head>
+<body style="background-color:#26BEEE">
+	<section class="header">
+		<nav>
+	   	<a href="index.html"><img src="imageslogol.jpg"></a>
+			<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="about.html">Home</a></li>
+					<li><a href="star.php">Review</a></li>
+					<li><a href="about.php">About Us</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<!--
+		<div class="login">
+	    <center><h1>Fake News Detector</h1></center>
+
+      <center><form action="result.html" method="POST">
+    	<textarea  name="message" rows="3" cols="20" required="required" style="font-size: 18pt"></textarea>
+		   <br> </br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+			</form>
+	    </center>
+		</div>
+
+	-->
+				<!-- <div class="results">
+{% if prediction == ['FAKE']%}
+<h2 style="color:red;">Looking Spam⚠️News📰 </h2>
+{% elif prediction == ['REAL']%}
+			<h2 style="color:green;"><b>Looking Real News📰</b></h2>
+{% endif %}
+
+</div>--><section><div class="row">
+			<div class="sec"><div class="sec">
+			</br>
+			
+           <div class="column">
+			<div class="box"><center>
+				<br>
+				<H1 style="text-align:center;font-size:35px;color:black;font-family:'Dancing Script', cursive;"  >Is it TRUE?</H1><br>
+				<H2 style="text-align:center;font-size:25px;color:black;font-family:'Dancing Script', cursive;">Want to know Facts from Fake?</H2><br>
+				<h2 style="text-align:center;font-size:25px;color:black;font-family:'Dancing Script', cursive;">Just copy the news and paste it here...</h2><br>
+                <h2 style="text-align:center;font-size:25px;color:black;font-family:'Dancing Script', cursive;">We will find the truth for you...</H2></center>
+			</div></div>
+			</div>
+<div class="ima">
+	<br><div class="column">
+			<div class="boxes"><center>
+		<form action="result.html" method="post">
+		<h4 style="color:black;text-align:center;;font-size:25px">News Headline</h4>
+		<input type="text" name="username" placeholder="news here" required=""> <br><br></h2>
+		<h4 style="color:black;text-align:center;;font-size:25px">Source URL</h4>
+		<input type="text" name="username" placeholder="URL here" required=""> <br><br></h2>
+		<input type="submit" name="submit" value="check fact" style="color:black;width:80px;height:30px">
+		</form></center>
+   </div>
+</div>
+</section>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0px";
+	}
+	function hideMenu(){
+		navLinks.style.right="200px";
+	}
+</script>
+</body>
+</html>
