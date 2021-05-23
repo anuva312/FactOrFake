@@ -73,5 +73,13 @@ Algorithms used are:
 * Logistic Regression
 * Multinomial Naive Bias
 
+## Testing the Model
+The model has been tested using the following measures:
+* Accuracy
+* Precision
+* Recall
+* ROC Curve
+* AUC Score
+
 # Status
 Ongoing... 
