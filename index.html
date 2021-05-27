@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fake News Detection System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+	    <nav id="header-nav" class="navbar navbar-default">
+	      <div class="container">
+	        <div class="navbar-header">
+	 
+	            <a class="navbar-brand brand-heading" href="index.html" id="brand-title">FactOrFake</a>
+	          
+	          <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+
+	        <div id="collapsable-nav" class="collapse navbar-collapse">
+	           <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
+	            <li class = "visible-xs">
+	              <a href="index.html"> 
+					  <!-- add link to home page -->
+	                <span>Home</span></a>
+	            </li>
+	            <li class = "visible-xs">
+	              <a href="">
+					  <!-- add link to review page -->
+	                <span>Review</span></a>
+	            </li>
+	            <li class = "visible-xs">
+	              <a href="">
+					  <!-- aadd link to about page -->
+	                <span>About Us</span></a>
+	            </li>
+	          </ul><!-- #nav-list -->
+	        </div><!-- .collapse .navbar-collapse -->
+	      </div><!-- .container -->
+	    </nav><!-- #header-nav -->
+	</header>
+	
+
+<div class="row">
+	<section class="col-lg-4 col-md-6 col-sm-12 col-xs-12" id="intro">
+			<br>
+			<H1 style="text-align:center;font-size:45px;color:black;font-family:'Dancing Script', cursive;"  >Is it TRUE?</H1><br>
+			<H2 style="text-align:center;font-size:35px;color:black;font-family:'Dancing Script', cursive;">Want to know Facts from Fake?</H2><br>
+			<h2 style="text-align:center;font-size:35px;color:black;font-family:'Dancing Script', cursive;">Just copy the news and paste it here...</h2><br>
+			<h2 style="text-align:center;font-size:35px;color:black;font-family:'Dancing Script', cursive;">We will find the truth for you...</H2>
+	</section>	
+
+	<section class="col-lg-4 col-md-6 col-sm-12 col-xs-12" id="input-form">
+		
+			<div class="brand-logo"></div>
+			<div class="brand-title">FactOrFake</div>
+			<div class="inputs">
+			  <label>News Headline</label>
+			  <input type="text" placeholder="" />
+			  <label>News URL</label>
+			  <input type="text" placeholder="" />
+			  <label>Content</label>
+			  <textarea>Place your content here!</textarea> 
+			  <button type="submit" id = "predict">Check Fact</button>
+			</div>
+
+
+	</section>
+
+</div>
+<!-- <script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0px";
+	}
+	function hideMenu(){
+		navLinks.style.right="200px";
+	}
+</script> -->
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>
