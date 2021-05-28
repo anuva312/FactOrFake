@@ -87,11 +87,11 @@
 			<div class="inputs">
 			<form action="{{ url_for('predict')}}" method="POST">
 				<label>News Headline</label>
-				<input type="text" name = "title" placeholder="" />
+				<input type="text" name = "title" placeholder="" required/>
 				<label>News URL</label>
-				<input type="text" name="url" placeholder="" />
+				<input type="text" name="url" placeholder="" required/>
 				<label>Content</label>
-				<textarea name="content">Place your content here!</textarea> 
+				<textarea name="content" required></textarea> 
 				<button type="submit" id = "predict">Check Fact</button>
 			</form>
 			</div>
