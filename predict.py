@@ -6,6 +6,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+app = Flask(__name__)
 
 stop_words = stopwords.words('english')
 stop_words.extend(['https', 'http', 'www', 'com'])
@@ -22,11 +23,12 @@ def lemmatize_text(text):
     lemmatizer = WordNetLemmatizer()
     for words in words:
         filter_sentence = filter_sentence + ' ' + str(lemmatizer.lemmatize(words)).lower()
+    print(filter_sentence)
     return filter_sentence
 
 
 model = pickle.load(open('logreg_model.sav', 'rb'))
-app = Flask(__name__)
+
 
 
 # default page
@@ -44,13 +46,20 @@ def predict():
     content = request.form['content']
 
     total = title + url + content
+    print(total)
 
-    vectorizer = TfidfVectorizer()
-    vectors = vectorizer.fit_transform(lemmatize_text(total))
+    test_case = lemmatize_text(total)
+    vectorizer = pickle.load(open('tfidf.pickle', 'rb'))
+    vectors = vectorizer.transform([test_case])
+    result = model.predict(vectors)
+    print(result[0])
 
     # For rendering results on HTML GUI
-    if model.predict(vectors):
+    if result[0]:
         output = "Fact"
     else:
         output = "Fake"
-    return render_template('index.html', prediction_text='The given piece of news article is '.format(output))
+    return render_template('index.html', prediction_text='The given piece of news article is {}'.format(output))
+
+if __name__ == "__main__":
+    app.run(debug = True)
