@@ -191,6 +191,7 @@ input, textarea {
 }
 
 #predict {
+  font-size: 16px;
   display: block;
   width: 100%;
   padding: 10;
@@ -205,9 +206,9 @@ input, textarea {
   font-weight: 900;
   /* box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white; */
   transition: 0.5s;
-  font-family: Cherry Bomb;
-  font-style: normal;
-  font-weight: normal;
+  /* font-family: Cherry Bomb; */
+  /* font-style: normal; */
+  /* font-weight: normal; */
   color: #FFFFFF;
   /* width: 100%; */
   /* position: absolute; */
@@ -226,6 +227,27 @@ input, textarea {
   box-shadow: none;
 }
 
+#prediction_text{
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.42857143;
+  color: #333;
+  display: block;
+  width: 100%;
+  /* padding: 10; */
+  border: none;
+  outline: none;
+  margin: 10px;
+  /* margin-top: 50px; */
+  padding: 10px;
+  /* padding-left: 20px; */
+  height: 50px;
+  /* font-size: 14px; */
+  border-radius: 50px;
+  /* padding: 6px; */
+  /* background: #ecf0f3;
+  box-shadow: 4px 4px 10px #1DA1F2 , -4px -4px 10px #cbced1 ; */
+}
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
