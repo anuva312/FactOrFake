@@ -40,7 +40,7 @@
 	        <div id="collapsable-nav" class="collapse navbar-collapse">
 	           <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
 	            <li class = "visible-xs">
-	              <a href="index.html"> 
+	              <a href="{{ url_for('home', filename='index.html') }}"> 
 					  <!-- add link to home page -->
 	                <span>Home</span></a>
 	            </li>
@@ -54,6 +54,15 @@
 					  <!-- aadd link to about page -->
 	                <span>About Us</span></a>
 	            </li>
+				<li class="hidden-xs menu_buttons">
+					<a href="{{ url_for('home', filename='index.html') }}">Home</a>
+				</li class="hidden-xs menu_buttons">
+				<li class="hidden-xs menu_buttons">
+					<a href="#">About</a>
+				</li class="hidden-xs menu_buttons">
+				<li class="hidden-xs menu_buttons">
+					<a href="#">Review</a>
+				</li>
 	          </ul><!-- #nav-list -->
 	        </div><!-- .collapse .navbar-collapse -->
 	      </div><!-- .container -->

@@ -19,14 +19,14 @@ body{
   border-radius: 0;
   border: 0;
   min-height: 70px;
-   padding-top: 25px;
+  padding-top: 20px;
 }
 
 #brand-title{
   font-size: 25px;
   color : #FFFFFF;
   margin-top: 5px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 /* .navbar-default .navbar-brand{
@@ -34,8 +34,9 @@ body{
 /* }  */
 
 .brand-heading  { 
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding: 0px;
+  padding-left: 10px;
   font-weight: bold;
   text-align: center;
   font-size: 175%;
@@ -45,7 +46,7 @@ body{
 }
 
 #nav-list {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 #nav-list a {
 	/* background: white; */
@@ -54,11 +55,13 @@ body{
 	/*text-align: center;*/
 }
 #nav-list a:hover {
-  background: #71badb;
-  color: white;
+  background-color: #f9f9f9;
+  color: #36a9f0;
+  border-radius: 20px;
 }
 #nav-list a span {
   font-size: 1.8em;
+  margin-bottom: 5px;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #f5fffa;
@@ -81,6 +84,27 @@ body{
    font-size: 175%;
    color:midnightblue;
 } */
+
+/* .menu_buttons{
+  float: right;
+  text-decoration: none;
+  padding: 1vh 1.5vw;
+  font-size: 20px;
+  color: #cbced1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.menu_buttons a:hover {
+  background-color: #f9f9f9;
+  color: #36a9f0;
+  border-radius: 20px;
+} */
+
+.menu_buttons{
+  font-size: 1.6em;
+}
 
 section{
 	margin: 2.5%;
@@ -105,7 +129,7 @@ form{
 #intro{
   background: #36a9f0;
   mix-blend-mode: darken;
-  border-radius: 64px;
+  border-radius: 40px;
   padding : 2.5%;
   text-align: center;
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; 
@@ -121,7 +145,7 @@ form{
   overflow: hidden;
   /* width: 40%; */
   /* height: 500px;  */
-  border-radius: 20px;
+  border-radius: 40px;
   padding: 60px;
   /* box-sizing: border-box; */
   /* background: "white"; */
@@ -248,6 +272,7 @@ input, textarea {
   /* background: #ecf0f3;
   box-shadow: 4px 4px 10px #1DA1F2 , -4px -4px 10px #cbced1 ; */
 }
+
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
