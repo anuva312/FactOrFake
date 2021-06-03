@@ -4,7 +4,6 @@ import nltk
 from flask import Flask, render_template, request
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import TfidfVectorizer
 
 app = Flask(__name__)
 
