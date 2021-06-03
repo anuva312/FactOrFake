@@ -2,23 +2,12 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fake News Detection System</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<title>Factorfake</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -58,10 +47,10 @@
 					<a href="{{ url_for('home', filename='index.html') }}">Home</a>
 				</li class="hidden-xs menu_buttons">
 				<li class="hidden-xs menu_buttons">
-					<a href="#">About</a>
+					<a href="{{ url_for('home', filename='about.html') }}">About</a>
 				</li class="hidden-xs menu_buttons">
 				<li class="hidden-xs menu_buttons">
-					<a href="#">Review</a>
+					<a href="">Review</a>
 				</li>
 	          </ul><!-- #nav-list -->
 	        </div><!-- .collapse .navbar-collapse -->
@@ -100,15 +89,6 @@
 	</section>
 
 </div>
-<!-- <script>
-	var navLinks = document.getElementById("navLinks");
-	function showMenu(){
-		navLinks.style.right="0px";
-	}
-	function hideMenu(){
-		navLinks.style.right="200px";
-	}
-</script> -->
 </body>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
