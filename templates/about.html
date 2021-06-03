@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>
+		FactOrFake
+	</title>
+	<link rel="stylesheet" type="text/css" href="about1.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&display=swap" rel="stylesheet">
+<body>
+	<header>
+	    <nav id="header-nav" class="navbar navbar-default">
+	      <div class="container">
+	        <div class="navbar-header">
+	 
+	            <a class="navbar-brand brand-heading" href="{{ url_for('home', filename='index.html') }}" id="brand-title">FactOrFake</a>
+	          
+	          <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+
+	        <div id="collapsable-nav" class="collapse navbar-collapse">
+	           <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
+	            <li class = "visible-xs">
+	              <a href="{{ url_for('home', filename='index.html') }}"> 
+					  <!-- add link to home page -->
+	                <span>Home</span></a>
+	            </li>
+	            <li class = "visible-xs">
+	              <a href="">
+					  <!-- add link to review page -->
+	                <span>Review</span></a>
+	            </li>
+	            <li class = "visible-xs">
+	              <a href="">
+					  <!-- aadd link to about page -->
+	                <span>About Us</span></a>
+	            </li>
+				<li class="hidden-xs menu_buttons">
+					<a href="{{ url_for('home', filename='index.html') }}">Home</a>
+				</li class="hidden-xs menu_buttons">
+				<li class="hidden-xs menu_buttons">
+					<a href="{{ url_for('home', filename='about.html') }}">About</a>
+				</li class="hidden-xs menu_buttons">
+				<li class="hidden-xs menu_buttons">
+					<a href="">Review</a>
+				</li>
+	          </ul><!-- #nav-list -->
+	        </div><!-- .collapse .navbar-collapse -->
+	      </div><!-- .container -->
+	    </nav><!-- #header-nav -->
+	</header>
+<center><h1 style="font-family: 'Luckiest Guy', cursive;">About Us</h1><br><p style="font-family: 'Pacifico', cursive; font-size:20px;">Twitter often used to repeatedly spread false information during and also after elections.By using machine learning technique for the prediction of fake news on Twitter,We hope to provide the user an idea about the truthness of the given tweets.</p>
+		</section> <center>
+		<section class="about-us">
+		<div class="row">
+		<div class="about-col"> 
+			<img src="images/anusree.jpg">
+			<div>
+			<h3>Anusree V A</h3>
+			<p>Vidya Academy Of Science And Technology,Thrissur<br>
+			    CSE<br>
+				<a href="mailto:anuva312@gmail.com">anuva312@gmail.com</a>
+				
+			</p>
+			
+			</div>
+		</div>
+		<div class="about-col">
+			<img src="images/athira.jpg">
+			<div>
+			<h3>Athira K</h3>
+			<p>Vidya Academy Of Science And Technology,Thrissur<br>
+			    CSE<br>
+				<a href="mailto:athiravenugopal42@gmail.com">athiravenugopal42@gmail.com</a></p>
+			
+			</div>
+		</div>
+		<div class="about-col">
+			<img src="images/arya.jpg">
+			<div>
+			<h3>Arya P S</h3>
+			<p>Vidya Academy Of Science And Technology,Thrissur<br>
+			    CSE<br>
+				<a href="mailto:aryaps606@gmail.com">aryaps606@gmail.com</a></p>
+			
+			</div>
+		</div>
+		<div class="about-col">
+			<img src="images/aarsha.jpg">
+			<div>
+			<h3>Aarsha Das K M</h3>
+			<p>Vidya Academy Of Science And Technology,Thrissur<br>
+			    CSE<br>
+				<a href="mailto:aarshadaskm@gmail.com">aarshadaskm@gmail.com</a></p>
+			
+			</div>
+		</div>
+	</div>	  
+</body>
+</html>
