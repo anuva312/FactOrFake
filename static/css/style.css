@@ -6,15 +6,10 @@
 
 body{
 	font-family: Roboto, Arial, Helvitica;
-  /* background-color: #26BEEE87; */
-  /* background: rgba(36, 166, 206, 0.28); */
-  /* mix-blend-mode: darken; */
-  ;
 }
 
 /** HEADER **/
 #header-nav {
-  /* background-color: #1d1dc2; */
   background: #1DA1F2;
   border-radius: 0;
   border: 0;
@@ -26,15 +21,13 @@ body{
   font-size: 25px;
   color : #FFFFFF;
   margin-top: 5px;
-  /* margin-bottom: 5px; */
 }
 
-/* .navbar-default .navbar-brand{
-	/* color: white; */
-/* }  */
+.navbar-default .navbar-brand{
+	color: white;
+ } 
 
 .brand-heading  { 
-  /* padding-top: 10px; */
   padding: 0px;
   padding-left: 10px;
   font-weight: bold;
@@ -49,10 +42,8 @@ body{
   margin-top: 5px;
 }
 #nav-list a {
-	/* background: white; */
 	color: white;
   border: none;
-	/*text-align: center;*/
 }
 #nav-list a:hover {
   background-color: #f9f9f9;
@@ -72,28 +63,6 @@ body{
 }
 /* END HEADER */
 
-/* #input-form {
-  background: rgba(38, 190, 238, 0.28);
-  mix-blend-mode: darken;
-  border-radius: 64px;
-} */
-
-/* h1{
-	font-weight: bold;
-	padding: 20px;
-   font-size: 175%;
-   color:midnightblue;
-} */
-
-/* .menu_buttons{
-  float: right;
-  text-decoration: none;
-  padding: 1vh 1.5vw;
-  font-size: 20px;
-  color: #cbced1;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
 
 .menu_buttons a:hover {
@@ -153,15 +122,6 @@ form{
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; 
 }
 
-/* .brand-logo {
-  height: 10px;
-  width: 10px;
-  background: url("https://img.icons8.com/color/100/000000/twitter--v2.png");
-  margin: auto;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
-} */
 
 .brand-title {
   margin-top: 10px;
@@ -185,12 +145,6 @@ label, input, textarea{
   margin: 10px;
   /* box-sizing: border-box; */
 }
-
-/* button{
-  width: 25%;
-  text-align: center;
-  align-self: center;
-} */
 
 label {
   margin-bottom: 6px;

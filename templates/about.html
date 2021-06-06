@@ -21,7 +21,7 @@
 	          
 	          <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar">Home</span>
+	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
@@ -35,23 +35,22 @@
 	                <span>Home</span></a>
 	            </li>
 	            <li class = "visible-xs">
-	              <a href="#">
+	              <a href="">
 					  <!-- add link to review page -->
 	                <span>Review</span></a>
 	            </li>
 	            <li class = "visible-xs">
-	              <a href="#">
-					  <!-- aadd link to about page -->
+	              <a href="{{ url_for('about', filename='about.html') }}">
 	                <span>About Us</span></a>
 	            </li>
 				<li class="hidden-xs menu_buttons">
 					<a href="{{ url_for('home', filename='index.html') }}">Home</a>
 				</li class="hidden-xs menu_buttons">
 				<li class="hidden-xs menu_buttons">
-					<a href="{{ url_for('about', filename='about.html') }}"">About</a>
+					<a href="{{ url_for('about', filename='about.html') }}">About</a>
 				</li class="hidden-xs menu_buttons">
 				<li class="hidden-xs menu_buttons">
-					<a href="#">Review</a>
+					<a href="">Review</a>
 				</li>
 	          </ul><!-- #nav-list -->
 	        </div><!-- .collapse .navbar-collapse -->
@@ -108,4 +107,7 @@
 		</div>
 	</div>	  
 </body>
+<script src="{{url_for('static', filename='js/jquery-2.1.4.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
 </html>
