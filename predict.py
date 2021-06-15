@@ -2,22 +2,11 @@ import pickle
 import re
 import nltk
 from flask import Flask, render_template, request
-# from flask_mysqldb import MySQL
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 app = Flask(__name__)
 
-#For connecting to database
-# app.config['MYSQL_HOST'] = 'localhost'
-# app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = ''
-# app.config['MYSQL_DB'] = 'factorfake'
-
-# mysql = MySQL(app)
-
-#Creating a connection cursor
-# cursor = mysql.connection.cursor()
 
 stop_words = stopwords.words('english')
 stop_words.extend(['https', 'http', 'www', 'com'])
@@ -46,9 +35,6 @@ model = pickle.load(open('logreg_model.sav', 'rb'))
 @app.route('/')
 def home():
     return render_template('index.html')
-
-# @app.route('/review', methods = ['POST', 'GET'])
-# def review():
 
 
 @app.route('/about')
