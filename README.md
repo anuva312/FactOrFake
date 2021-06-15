@@ -47,7 +47,9 @@ The folowing datasets have been used in this project:
 
 [//]: # (Fake and Real News Dataset - https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 
-# Progress
+# Proposed Work
+
+## Data Collection and Cleaning
 
 So far, the Poltifact and Gossipcop (both fake and real) datasets have been combined into a single dataset of 33356 rows and 3 columns. 
 
@@ -60,7 +62,7 @@ The three columns are:
 
 All other columns have been dropped.  
 
-## Data Preprocessing
+## Natural Language Processing
 The following operations have been applied to the combined dataset:
 * Combining _title_ and *news_url* into single column
 * Tokenization
@@ -93,18 +95,18 @@ The model has been tested using the following measures:
 
 ### Confusion Matrix for Logistic Regression
 
-![Confusion Matrix](Pictures/log-cm-percentage.png)
+![Confusion Matrix](https://github.com/anuva312/FactOrFake/blob/main/Pictures/log-cm-percentage.PNG)
 
 ### ROC Curve for Logistic Regression
-![Confusion Matrix](Pictures/log-roc.png)
+![ROC Curve](https://github.com/anuva312/FactOrFake/blob/main/Pictures/log-roc.PNG)
 
 
 ### Confusion Matrix for Multinomial Naive Bayes
 
-![Confusion Matrix](Pictures/nb-cm-percentage.png)
+![Confusion Matrix](https://github.com/anuva312/FactOrFake/blob/main/Pictures/nb-cm-percentage.PNG)
 
 ### ROC Curve for Multinomial Naive Bayes
-![Confusion Matrix](Pictures/nb-roc.png)
+![ROC Curve](https://github.com/anuva312/FactOrFake/blob/main/Pictures/nb-roc.PNG)
 
 # Conclusion
 
