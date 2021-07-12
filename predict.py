@@ -46,11 +46,11 @@ def about():
 @app.route('/predict', methods=['POST'])
 def predict():
     # Get data from HTML Form
-    title = request.form['title']
+    # title = request.form['title']
     url = request.form['url']
     content = request.form['content']
 
-    total = title + url + content
+    total = url + content
     print(total)
 
     test_case = lemmatize_text(total)
